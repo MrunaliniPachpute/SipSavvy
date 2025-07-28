@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Item Details</title>
+    <link rel="stylesheet" href="/show.css">
+</head>
+<body>
+  <h2>Your Item Details</h2>
+  
+  <div class="details-container">
+    <div class="info">
+      <p><strong>Item ID:</strong> <%= drink.id %></p>
+      <p><strong>Item Name:</strong> <%= drink.drinkName %></p>
+      <p><strong>Item Price:</strong> ₹<%= drink.price %></p>
+      <p><strong>Item Rating:</strong> <%= drink.rating %></p>
+      <a href="/drinks">Back to cart</a>
+    </div>
+
+    <div class="image">
+      <img src="/assets/<%= drink.drinkName.replace(/\s/g, '') %>.jpg" alt="<%=drink.drinkName %> Image">
+    </div>
+  </div>
+</body>
+
+</html>

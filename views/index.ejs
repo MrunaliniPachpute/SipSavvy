@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View all Drinks</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="menu">
+        <label for="drinkName">Choose a Drink:</label>
+        <form action="/drinks" method="post">
+        <select name="drinkName" id="drinkName">
+            <option value="" disabled selected>Select a drink</option>
+            <% for(let drink of drinks) { %>
+                    <option value="<%= drink.drinkName %>"><%= drink.drinkName %></option>
+            <% } %>
+        </select>
+        <button class="add">Add Drink</button>
+        </form>
+    </div>
+
+    <div class="cart">
+        <h2>Your Items Cart</h2>
+        <div class="card-container">
+        <% for(let item of cart ){ %>
+            <div class="card">
+                <img src="/assets/<%= item.drinkName.replace(/\s/g, '') %>.jpg" alt="<%=item.drinkName %> Image">
+                <p><strong><%= item.drinkName %></strong></p>
+                <p>Price : ₹<%= item.price %></p>
+                
+                <form action="drinks/<%= item.id %>?_method=DELETE" method="post">
+                    <a href="http://localhost:3000/drinks/<%= item.id %>" class="custom-btn">View details</a>
+                    <button class="custom-btn">Delete</button>
+                </form>
+            </div>
+        <% } %>
+
+    </div>
+    </div>
+</body>
+</html>
