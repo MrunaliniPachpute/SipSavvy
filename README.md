@@ -7,14 +7,12 @@ A minimal full-stack drinks logging app to keep track of your favorite beverages
 ## 🔗 Live Demo
 
 > [SipSavvy is live here](https://sipsavvy.onrender.com/drinks)  
-_(Replace with your actual deployed link)_
 
 ---
 
 ## 🖼️ Preview
 
 ![Screenshot of the deployed app](./public/assets/workingImg.jpg)  
-_Add a real screenshot of your app above by replacing the image path._
 
 ---
 
