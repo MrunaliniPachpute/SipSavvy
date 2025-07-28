@@ -13,7 +13,7 @@ _(Replace with your actual deployed link)_
 
 ## 🖼️ Preview
 
-![Screenshot of the deployed app](./path/to/screenshot.pn)  
+![Screenshot of the deployed app](./public/assets/workingImg.png)  
 _Add a real screenshot of your app above by replacing the image path._
 
 ---
