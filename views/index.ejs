@@ -36,10 +36,15 @@
                     <p>Price : ₹<%= item.price %>
                     </p>
 
+                  <div class="form-buttons">
+                      <form action="drinks/<%= item.id %>" method="GET">
+                        <button class="custom-btn">View details</button>
+                    </form>
                     <form action="drinks/<%= item.id %>?_method=DELETE" method="post">
-                        <a href="http://localhost:3000/drinks/<%= item.id %>" class="custom-btn">View details</a>
+                       
                         <button class="custom-btn">Delete</button>
                     </form>
+                  </div>
                 </div>
                 <% } %>
 

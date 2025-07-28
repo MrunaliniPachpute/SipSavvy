@@ -100,14 +100,20 @@ select:focus {
   text-decoration: none;
   background-color: #607a94; /* Professional dark blue-gray */
   color: white;
-  padding: 5px;
-  margin: 2px;
+  padding: 10px;
+  margin: 5px;
   border: none;
   border-radius: 8px;
   font-weight: 300;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom-btn:hover {
